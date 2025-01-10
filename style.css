@@ -10,3 +10,36 @@ h2{
     font-family: "Poppins";
     font-size: 40px;
 }
+.btn{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    font-family: "Poppins";
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: .3s ease-in-out;
+    z-index: 1;
+}
+a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #fff;
+    transition: .3s ease-in-out;
+    z-index: -1;
+}
+a:hover::before{
+    width: 100%;
+}
+a:hover{
+    color: #0ab26f;
+}
