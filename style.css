@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000000;
+}
+h2{
+    color: #0ab26f;
+    font-family: "Poppins";
+    font-size: 40px;
+}
